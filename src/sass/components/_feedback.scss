@@ -11,9 +11,11 @@
 		position: relative;
 		overflow: hidden;
 		background-color: v.$ascent-color;
-		border-radius: v.$br16;
 
-		width: 708px;
+		border-top-left-radius: v.$br16;
+		border-bottom-left-radius: v.$br16;
+
+		width: 100%;
 		height: 844px;
 
 		margin-right: auto;
@@ -39,7 +41,8 @@
 		justify-content: center;
 		align-items: center;
 
-		border-radius: v.$br16;
+		border-top-right-radius: v.$br16;
+		border-bottom-right-radius: v.$br16;
 
 		background-color: rgb(34, 37, 43);
 		width: 100%;
@@ -102,3 +105,87 @@
 	}
 }
 
+@media (max-width: 375px) {
+	.feedback {
+		margin-bottom: 13rem;
+		&__content {
+			flex-direction: column;
+		}
+		&__left {
+		
+			border-top-right-radius: v.$br16;
+			border-bottom-right-radius: v.$br16;
+		
+
+			height: 660px;
+
+			margin-right: auto;
+
+			&::before {
+				background-size: 870px 505px;
+				left: -16rem;
+				top: 21rem;
+
+				width: 870px;
+				height: 505px;
+			}
+		}
+
+		&__right {
+			display: flex;
+			flex-direction: column;
+		
+			border-bottom-left-radius: v.$br16;
+			border-top-left-radius: v.$br16;
+
+
+			background-color: rgb(34, 37, 43);
+
+			height: 660px;
+
+			padding-right: 0px;
+		}
+
+		&__title {
+			@include mixins.title(v.$fs36);
+			margin-top: 4rem;
+			margin-left: 1rem;
+			max-width: 28.5rem;
+		}
+
+		&__subtitle {
+			@include mixins.subtitle(v.$fs18);
+			margin-left: 1rem;
+			max-width: 21.5rem;
+		}
+	}
+
+	.feedback__input {
+		@include mixins.input;
+		display: block;
+		max-width: 343px;
+		margin-bottom: 1.5rem;
+	}
+	.feedback__textarea {
+		@include mixins.input(8.2rem);
+		display: block;
+		max-width: 343px;
+		margin-bottom: 1.5rem;
+		padding-top: 1rem;
+		resize: none;
+	}
+	.feedback__button {
+		@include mixins.button-base(0.75rem 1.5rem, v.$ascent-color);
+
+		&:hover {
+			background-color: v.$ascent-howe-color;
+		}
+	}
+}
+
+@media (max-width: 1010px) {
+	.feedback__content {
+		display: flex;
+		flex-direction: column;
+	}
+}

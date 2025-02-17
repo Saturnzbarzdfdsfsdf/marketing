@@ -1,65 +1,79 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const modal = document.getElementById('modal')
-	const modalContent = modal.querySelector('.modal__content')
+	const modal = document.getElementById('reviews__modal')
+	const modalContent = modal.querySelector('.reviews__modal-content')
+
+	//костыль
+	if (modal.parentNode !== document.body) {
+		document.body.appendChild(modal)
+	}
+
+	// Функция расчёта ширины скроллбара
+	function getScrollbarWidth() {
+		return window.innerWidth - document.documentElement.clientWidth
+	}
 
 	// Функция закрытия модального окна
 	function closeModal() {
 		modal.classList.remove('active')
-		// Очищаем содержимое, оставляя кнопку закрытия
 		document.body.classList.remove('no-scroll')
-		modalContent.innerHTML = '<button class="modal__close">&times;</button>'
+		document.body.style.paddingRight = '' // Убираем добавленный отступ
+		modalContent.innerHTML =
+			'<button class="reviews__modal-close">&times;</button>'
 		attachCloseListener()
 	}
 
-	// Назначаем обработчик клика на кнопку закрытия (внутри модального окна)
+	// Назначаем обработчик для кнопки закрытия
 	function attachCloseListener() {
-		const closeBtn = modalContent.querySelector('.modal__close')
+		const closeBtn = modalContent.querySelector('.reviews__modal-close')
 		if (closeBtn) {
 			closeBtn.addEventListener('click', closeModal)
 		}
 	}
+
 	attachCloseListener()
 
-	// Закрываем модальное окно при клике по оверлею
+	// Закрытие окна при клике вне области контента
 	modal.addEventListener('click', e => {
-		if (e.target === modal || e.target.classList.contains('modal__overlay')) {
+		if (!modalContent.contains(e.target)) {
 			closeModal()
 		}
 	})
 
-	// Обработчик для всех кнопок "Показать ещё"
 	document.querySelectorAll('.card__button-more').forEach(button => {
 		button.addEventListener('click', () => {
 			const card = button.closest('.card')
-
 			if (card) {
-				// Клонируем карточку
 				const cardClone = card.cloneNode(true)
 				cardClone.className = 'card-modal'
 
-				document.body.classList.add('no-scroll')
-
-				// Находим и удаляем кнопку "Показать ещё" внутри клона
+				// Удаляем кнопку "Показать ещё" из клона
 				const modalButton = cardClone.querySelector('.card__button-more')
 				if (modalButton) {
 					modalButton.remove()
 				}
 
-				// Изменяем описание, если нужно
+				// Добавляем дополнительное описание, если есть такой элемент
 				const description = cardClone.querySelector(
 					'.card__description--extension'
 				)
 				if (description) {
-					description.textContent =
-						description.textContent +
-						' Я использовал этот софт для фрилансера и был впечатлен его функциональностью и простотой использования. Программа помогла мне организовать свою работу и улучшить эффективность выполнения задач. Особенно мне нравится, что софт предоставляет возмож... Дополнительная информация, подробное описание, отзывы, фото и т.д.'
+					description.textContent +=
+						'Я использовал этот софт для фрилансера и был впечатлен его функциональностью и простотой использования. Программа помогла мне организовать свою работу и улучшить эффективность выполнения задач. Особенно мне нравится, что софт предоставляет возмож... Дополнительная информация, подробное описание, отзывы, фото и т.д.'
 				}
 
-				// Очищаем содержимое модального окна, вставляем кнопку закрытия и клонированную карточку
-				modalContent.innerHTML = '<button class="modal__close"></button>'
+				modalContent.innerHTML =
+					'<button class="reviews__modal-close">&times;</button>'
 				modalContent.appendChild(cardClone)
-
 				attachCloseListener()
+
+				// Вычисляем ширину скроллбара и добавляем отступ к body
+				const scrollbarWidth = getScrollbarWidth()
+				if (scrollbarWidth) {
+					document.body.style.paddingRight = `${scrollbarWidth}px`
+				}
+
+				// Блокируем прокрутку страницы и показываем модальное окно
+				document.body.classList.add('no-scroll')
 				modal.classList.add('active')
 			}
 		})

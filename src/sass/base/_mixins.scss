@@ -27,11 +27,11 @@
 	font-weight: 500;
 }
 
-@mixin input($height: 3rem) {
+@mixin input($height: 3rem, $width: 28.5rem) {
 	color: v.$text-white-color;
 	background-color: v.$gray-form-bg-color;
 	padding-left: 1rem;
 	border-radius: v.$br8;
-	width: 28.5rem;
+	width: $width;
 	height: $height;
 }

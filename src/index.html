@@ -13,80 +13,183 @@
 		<script src="./libs/gsap/ScrollTrigger.min.js"></script>
 		<script src="./libs/gsap/ScrollSmoother.min.js"></script>
 		<!--js-->
-		<script type="module" src="./js/main.js" defer></script>
+		<script type="module" src="./js/shared/getScrollbarWidth.js" defer></script>
+		<script type="module" src="./js/loginModal.js" defer></script>
 		<script type="module" src="./js/galleryModal.js" defer></script>
 		<script type="module" src="./js/modal.js" defer></script>
 		<script type="module" src="./js/reviewsSlider.js" defer></script>
 		<script type="module" src="./js/feedBackForm.js" defer></script>
-
-		
+		<script type="module" src="./js/app.js" defer></script>
 	</head>
 	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-content">
+					<div class="header__logo-box">
+						<a href="#work-faster">
+							<img
+								class="header__logo"
+								src="./assets/svg/Logo.svg"
+								alt="logo"
+							/>
+						</a>
+					</div>
 
-	<div class="wrapper">
-		<div class="content">
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#advantages">Преимущества</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#products">Продукты</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#gallery">Галерея</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#partners">Партнеры</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#reviews">Отзывы</a>
+							</li>
+						</ul>
+					</nav>
 
-			<header class="header">
-				<div class="container">
-					<div class="header-content">
-						<div class="header__logo-box">
-							<a href="#">
-								<img
-									class="header__logo"
-									src="./assets/svg/Logo.svg"
-									alt="logo"
-								/>
-							</a>
-						</div>
+					<div>
+						<button class="header__login-button">Войти</button>
+					</div>
 
-						<nav class="header__nav">
-							<ul class="header__nav-list">
-								<li class="header__nav-item">
-									<a href="#advantages">Преимущества</a>
-								</li>
-								<li class="header__nav-item">
-									<a href="#">Продукты</a>
-								</li>
-								<li class="header__nav-item">
-									<a href="#">Галерея</a>
-								</li>
-								<li class="header__nav-item">
-									<a href="#">Партнеры</a>
-								</li>
-								<li class="header__nav-item">
-									<a href="#">Отзывы</a>
-								</li>
-							</ul>
-						</nav>
+					<div class="header__burger" id="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 
-						<div>
-							<button class="header__login-button">Войти</button>
-						</div>
+					<div id="login-modal" class="login__modal">
+						<div class="login__modal-content">
+							<button
+								id="login-modal-close"
+								class="login__modal-close"
+								aria-label="Закрыть модальное окно"
+							></button>
 
-						<div class="header__burger" id="burger">
-							<span></span>
-							<span></span>
-							<span></span>
+							<form class="login__form" action="#" method="post">
+								<fieldset class="login__fieldset">
+									<legend class="login__legend">Вход в систему</legend>
+
+									<label class="login__label" for="email-login">E-mail</label>
+									<input
+										class="login__input"
+										id="email-login"
+										type="email"
+										placeholder="example@email.com"
+										required
+									/>
+									<label class="login__label" for="password">Пароль</label>
+									<div class="password-container">
+										<input
+											class="login__input"
+											id="password"
+											type="password"
+											placeholder="*********"
+											required
+										/>
+										<span class="toggle-password"
+											><i class="fas fa-eye"
+												><img src="./assets/images/eye-slash.png" alt="" /></i
+										></span>
+									</div>
+
+									<label class="login__remember-label">
+										<input
+											class="login__checkbox"
+											id="remember"
+											type="checkbox"
+										/>
+										<span class="login__custom-checkbox"></span>
+										Запомнить меня
+									</label>
+
+									<button type="submit" class="login__submit-button">
+										Войти
+									</button>
+								</fieldset>
+
+								<fieldset class="login__alternative-login">
+									<span class="login__alternative-text"
+										>Или войдите с помощью</span
+									>
+									<div class="login__social-buttons">
+										<a
+											href="#"
+											class="login__social-button login__social-button--apple"
+											>Apple</a
+										>
+										<a
+											href="#"
+											class="login__social-button login__social-button--google"
+											>Google</a
+										>
+									</div>
+								</fieldset>
+							</form>
+
+							<span class="login__registration-text"
+								>Впервые в системе?
+								<a href="#" class="login__registration-link"
+									>Регистрация</a
+								></span
+							>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<!-- burger -->
-				<div class="header__mobile-nav" id="mobile-nav">
-					<div class="container">
-						<ul class="header__nav-list">
-							<li class="header__nav-item"><a href="#">Преимущества</a></li>
-							<li class="header__nav-item"><a href="#">Продукты</a></li>
-							<li class="header__nav-item"><a href="#">Галерея</a></li>
-							<li class="header__nav-item"><a href="#">Партнеры</a></li>
-							<li class="header__nav-item"><a href="#">Отзывы</a></li>
+			<!-- burger -->
+			<div class="header__mobile-nav" id="mobile-nav">
+				<div class="container">
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="#">Преимущества</a></li>
+						<li class="header__nav-item"><a href="#">Продукты</a></li>
+						<li class="header__nav-item"><a href="#">Галерея</a></li>
+						<li class="header__nav-item"><a href="#">Партнеры</a></li>
+						<li class="header__nav-item"><a href="#">Отзывы</a></li>
+					</ul>
+
+					<div class="header__socials">
+						<ul class="header__socials-list">
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="./assets/socials/vk.png" alt="Вконтакте" />
+								</a>
+							</li>
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="./assets/socials/tg.png" alt="Телеграм" />
+								</a>
+							</li>
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="./assets/socials/youtube.png" alt="YouTube" />
+								</a>
+							</li>
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="./assets/socials/dzen.png" alt="Дзен" />
+								</a>
+							</li>
 						</ul>
 					</div>
-				</div>
-			</header>
 
-			<main>
-				<section class="work-faster">
+					<button class="header__button-free">Попробовать бесплатно</button>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper">
+			<div class="content">
+				<main>
+					<section id="work-faster" class="work-faster">
 					<div class="container">
 						<div class="work-faster__content">
 							<h1 class="work-faster__title">
@@ -99,11 +202,15 @@
 								расписания
 							</p>
 
-							<button class="work-faster__button--primary">
-								Попробовать бесплатно
+							<button  class="work-faster__button--primary">
+								<a href="#feedback">
+									Попробовать бесплатно
+								</a>
 							</button>
 							<button class="work-faster__button--secondary">
-								Узнать больше
+								<a href="#advantages">
+									Узнать больше
+								</a>
 							</button>
 						</div>
 
@@ -170,7 +277,7 @@
 					</div>
 				</section>
 
-				<section class="products">
+				<section id="products" class="products">
 
 					<div class="container">
 						<h2 class="products__title">Продукт</h2>
@@ -196,21 +303,23 @@
 									клиента в работе? Link поможет вам определиться
 								</p>
 								<button class="product-feature__button">
-									Попробовать бесплатно
+									<a href="#feedback">
+
+										Попробовать бесплатно
+									</a>
 								</button>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="gallery">
+				<section id="gallery" class="gallery">
 					<div class="container">
 						<h2 class="gallery__title">Галерея</h2>
 						<p class="gallery__description">
 							Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы
 						</p>
 
-						<!-- Основная галерея -->
 						<div class="gallery__inner">
 							<div class="div1">
 								<img src="./assets/images/Frame1.png" alt="gallery image 1" />
@@ -235,7 +344,6 @@
 							</div>
 						</div>
 
-						<!-- Дополнительная галерея (по умолчанию скрыта) -->
 						<div class="gallery__more gallery__inner">
 							<div class="div1">
 								<img src="./assets/images/Frame1.png" alt="gallery image 1" />
@@ -263,16 +371,15 @@
 						<button class="gallery__button-more">Показать еще</button>
 					</div>
 
-					<!-- Модальное окно галереи -->
 					<div id="gallery-modal" class="gallery__modal">
 						<div class="gallery__modal-content">
-							<span id="gallery-modal-close" class="gallery__modal-close">&times;</span>
+							<span id="gallery-modal-close" class="gallery__modal-close"></span>
 							<img id="gallery-modal-img" class="gallery__modal-image" src="" alt="modal image">
 						</div>
 					</div>
 				</section>
 
-				<section class="partners">
+				<section id="partners" class="partners">
 					<div class="container">
 						<h2 class="partners__title">Партнёры</h2>
 						<p class="partners__description">
@@ -350,7 +457,7 @@
 					</div>
 				</section>
 
-				<section class="reviews">
+				<section id="reviews" class="reviews">
 					
 					<div class="container">
 						<h2 class="reviews__title">Отзывы</h2>
@@ -511,28 +618,27 @@
 						</div>
 					</div>
 
-					<div id="modal" class="modal">
-						<div class="modal__overlay"></div>
-						<div class="modal__content">
-							<button class="modal__close"></button>
+					<div id="reviews__modal" class="reviews__modal">
+						<div class="reviews__modal-content">
+							<button class="reviews__modal-close"></button>
 						</div>
 					</div>
 
 				</section>
 
-				<section class="feedback">
+					<section id="feedback" class="feedback">
 					<div class="container">
 						<div class="feedback__content">
 							
+						<div class="feedback__left">
+							<h2 class="feedback__title">Оставьте заявку на бетатест</h2>
+							<p class="feedback__subtitle">
+								Мы уделяем особое внимание эргономике и стараемся
+								соответствовать месту работы
+							</p>
+						</div>
+							
 							<div class="feedback__right">
-
-								<div class="feedback__left">
-									<h2 class="feedback__title">Оставьте заявку на бетатест</h2>
-									<p class="feedback__subtitle">
-										Мы уделяем особое внимание эргономике и стараемся
-										соответствовать месту работы
-									</p>
-								</div>
 
 								<form class="feedback__form" action="#" method="post">
 									<fieldset class="feedback__fieldset">
@@ -592,45 +698,50 @@
 										</button>
 									</fieldset>
 								</form>
+
 							</div>
 						</div>
 					</div>
 				</section>
+				</main>
 
-			</main>
-
-			<footer class="footer">
+				<footer class="footer">
 				<div class="container">
 					<div class="grid">
+
 					<div class="footer__navigation footer__navigation--link">
-						<h3 class="footer__navigation-title">Навигация</h3>
+						<h3 class="footer__navigation-title">Навигация
+							 <span class="arrow"></span>
+						</h3>
 
 						<nav class="footer__nav">
 							<ul class="footer__list">
 								<li class="footer__item">
-									<a href="#" class="footer__link">Преимущества</a>
+									<a href="#advantages" class="footer__link">Преимущества</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link">Продукты</a>
+									<a href="#products" class="footer__link">Продукты</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link">Галерея</a>
+									<a href="#gallery" class="footer__link">Галерея</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link">Партнеры</a>
+									<a href="#partners" class="footer__link">Партнеры</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link">Отзывы</a>
+									<a href="#revievs" class="footer__link">Отзывы</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link">Заявка</a>
+									<a href="#feedback" class="footer__link">Заявка</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 
 					<div class="footer__navigation footer__navigation--mission">
-						<h3 class="footer__navigation-title">Миссия</h3>
+						<h3 class="footer__navigation-title">Миссия 
+							 <span class="arrow"></span>
+						</h3>
 
 						<nav class="footer__nav">
 							<ul class="footer__list">
@@ -657,7 +768,9 @@
 					</div>
 
 					<div class="footer__navigation footer__navigation--resources">
-						<h3 class="footer__navigation-title">Ресурсы</h3>
+						<h3 class="footer__navigation-title">Ресурсы 
+							 <span class="arrow"></span>
+						</h3>
 
 						<nav class="footer__nav">
 							<ul class="footer__list">
@@ -681,7 +794,9 @@
 					</div>
 
 					<div class="footer__navigation footer__navigation--about">
-						<h3 class="footer__navigation-title">О нас</h3>
+						<h3 class="footer__navigation-title">О нас 
+							 <span class="arrow"></span>
+						</h3>
 
 						<nav class="footer__nav">
 							<ul class="footer__list">
@@ -751,7 +866,7 @@
 					</div>
 					<div class="footer__bottom">
 
-						<a href="#">
+						<a href="#work-faster">
 							<img
 								class="footer__logo"
 								src="./assets/svg/Logo.svg"
@@ -768,16 +883,15 @@
 							<a href="#" class="footer__link">Публичная оферта</a>
 						</nav>
 
-							<a href="#" class="footer__button footer__button--up"
+							<a href="#work-faster" class="footer__button footer__button--up"
 							>Вернуться наверх
 							</a>
 					</div>
 				</div>
 
 			</footer>
-
+			
 		</div>
-	</div>
-
+		</div>
 	</body>
 </html>

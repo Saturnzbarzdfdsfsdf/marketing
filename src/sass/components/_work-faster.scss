@@ -3,6 +3,7 @@
 
 .work-faster {
 	position: relative;
+	margin-top: v.$margin-section-base;
 	margin-bottom: v.$margin-section-base;
 
 	background: v.$bg-gradient;
@@ -111,13 +112,14 @@
 
 		&__button--primary {
 			@include mixins.button-base(1rem 2rem, v.$ascent-color, v.$fs16);
-			margin-right: 0;
+			margin-right: -10px;
 			margin-bottom: 0.75rem;
 			border: none;
 		}
 
 		&__button--secondary {
-			@include mixins.button-base(1rem 4.4rem, transparent, v.$fs16);
+			@include mixins.button-base(1rem 4.2rem, transparent, v.$fs16);
+			margin-right: 0;
 		}
 	}
 

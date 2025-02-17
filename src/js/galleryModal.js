@@ -1,22 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
-	// Работа с модальным окном галереи
 	const galleryModal = document.getElementById('gallery-modal')
 	const modalImg = document.getElementById('gallery-modal-img')
 	const modalClose = document.getElementById('gallery-modal-close')
 
-	// Функция для предотвращения прокрутки колесиком
+	//костыль
+	if (galleryModal.parentNode !== document.body) {
+		document.body.appendChild(galleryModal)
+	}
+
+	// Функция для расчёта ширины скроллбара
+	function getScrollbarWidth() {
+		return window.innerWidth - document.documentElement.clientWidth
+	}
+
 	function preventScroll(e) {
 		e.preventDefault()
 	}
 
-	// Обработчик клика по каждому изображению галереи
+	// Открытие модального окна по клику на изображение галереи
 	const galleryImages = document.querySelectorAll('.gallery__inner img')
 	galleryImages.forEach(function (img) {
 		img.addEventListener('click', function () {
-			modalImg.src = this.src // Подставляем источник нажатого изображения
+			modalImg.src = this.src
+
+	
+			const scrollbarWidth = getScrollbarWidth()
+			if (scrollbarWidth) {
+				document.body.style.paddingRight = `${scrollbarWidth}px`
+			}
+
+			document.body.classList.add('no-scroll')
 			galleryModal.classList.add('open')
-			document.body.classList.add('no-scroll') // Добавляем класс для overflow: hidden
-			// Блокируем прокрутку колесиком
 			document.addEventListener('wheel', preventScroll, { passive: false })
 		})
 	})
@@ -26,24 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (e.target === galleryModal || e.target === modalClose) {
 			galleryModal.classList.remove('open')
 			document.body.classList.remove('no-scroll')
-			// Снимаем блокировку прокрутки колесиком
+			document.body.style.paddingRight = '' 
 			document.removeEventListener('wheel', preventScroll)
 		}
 	})
 
-	// Работа кнопки "Показать еще"
+	// Работа кнопки "Показать еще" для блока с дополнительной галереей
 	const showMoreButton = document.querySelector('.gallery__button-more')
 	const moreGallery = document.querySelector('.gallery__more')
-
 	showMoreButton.addEventListener('click', function () {
-		// Переключаем класс .open для показа/скрытия блока с доп. изображениями
 		moreGallery.classList.toggle('open')
-
-		// Опционально: меняем текст кнопки
-		if (moreGallery.classList.contains('open')) {
-			showMoreButton.textContent = 'Скрыть'
-		} else {
-			showMoreButton.textContent = 'Показать еще'
-		}
+		showMoreButton.textContent = moreGallery.classList.contains('open')
+			? 'Скрыть'
+			: 'Показать еще'
 	})
 })

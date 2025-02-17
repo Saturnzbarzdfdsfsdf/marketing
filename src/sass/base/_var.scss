@@ -2,7 +2,7 @@
 $container-width: 90.5rem;
 $transition-base: all 0.3s ease;
 $open-gallery: max-height 0.6s ease-out;
-$modal-overlay: rgba(0, 0, 0, 0.8);
+$modal-overlay: rgba(0, 0, 0, 0.495);
 
 $button-border: 1px solid rgb(255, 255, 255);
 $card-border: 1px solid rgb(67, 73, 86);
@@ -56,3 +56,4 @@ $margin-section-base16: 16rem;
 // z-index
 $z10: 10;
 $z999: 999;
+$z998: 100;
