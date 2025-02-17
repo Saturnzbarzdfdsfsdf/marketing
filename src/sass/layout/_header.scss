@@ -1,0 +1,115 @@
+@use '../base/var' as v;
+@use '../base/mixins';
+
+.header {
+	margin-bottom: v.$margin-section-base;
+	&-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 5rem;
+
+		background-color: v.$main-bg-color;
+	}
+
+	&__login-button {
+		@include mixins.button-base;
+		border: v.$button-border;
+
+		&:hover {
+			background-color: v.$button-hover-gray;
+		}
+	}
+}
+
+.header__nav {
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		gap: 2rem;
+	}
+	&-item {
+		position: relative;
+		text-align: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -1.74rem;
+			height: 0.2rem;
+			background-color: v.$ascent-color;
+			width: 0;
+			transition: v.$transition-base;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+}
+
+// burger
+.header__mobile-nav {
+	display: none;
+}
+.header__burger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+
+	span {
+		transition: v.$transition-base;
+		height: 0.2rem;
+		border-radius: v.$br8;
+		width: 1.6rem;
+		background-color: v.$text-base-color;
+		margin: 0.2rem 0;
+	}
+
+	/* Стили для активного состояния */
+	&.active span:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	&.active span:nth-child(2) {
+		opacity: 0;
+	}
+	&.active span:nth-child(3) {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+}
+
+/* Мобильные стили */
+@media (max-width: 48rem) {
+	.header__nav {
+		display: none;
+	}
+
+	.header__burger {
+		display: flex;
+	}
+
+	.header__mobile-nav.active {
+		display: block;
+	}
+
+	.header__nav-list {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+}
+
+@media (max-width: 23.5rem) {
+	.header__login-button {
+		@include mixins.button-base(0.5rem 1.5rem);
+		margin-left: 5rem;
+	}
+
+	.header__logo-box {
+		width: 5.5rem;
+		height: 1.2rem;
+	}
+}

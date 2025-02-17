@@ -1,0 +1,58 @@
+// base
+$container-width: 90.5rem;
+$transition-base: all 0.3s ease;
+$open-gallery: max-height 0.6s ease-out;
+$modal-overlay: rgba(0, 0, 0, 0.8);
+
+$button-border: 1px solid rgb(255, 255, 255);
+$card-border: 1px solid rgb(67, 73, 86);
+
+// font family
+$ff-Onest: 'Onest', serif;
+
+// color
+$main-bg-color: rgb(22, 24, 29);
+$text-white-color: rgb(255, 255, 255);
+$text-base-color: rgb(226, 228, 233);
+$gray-form-bg-color: rgb(45, 49, 57);
+
+$card-gray-color: rgb(112, 122, 143);
+$card-bg-model-color: rgb(34, 37, 43);
+
+$ascent-color: rgb(68, 82, 254);
+
+$ascent-howe-color: rgba(107, 117, 233, 0.917);
+$button-hover-gray: rgba(255, 255, 255, 0.2);
+
+$bg-gradient: linear-gradient(
+	180deg,
+	rgba(0, 0, 0, 0),
+	rgb(14, 14, 14) 66.146%
+);
+
+// font size
+$fs16: 1rem;
+$fs18: 1.1rem;
+$fs20: 1.25rem;
+$fs36: 2.25rem;
+$fs48: 3rem;
+$fs56: 3.5rem;
+$fs80: 5rem;
+
+// border radius
+$br8: 0.5rem;
+$br16: 1rem;
+
+// line height
+$lh24: 1.5rem;
+
+// border radius
+$br8: 0.5rem;
+
+// margin
+$margin-section-base: 8rem;
+$margin-section-base16: 16rem;
+
+// z-index
+$z10: 10;
+$z999: 999;

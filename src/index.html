@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!--css-->
+		<link rel="stylesheet" href="./sass/main.scss" />
+
+		<!--gsap-->
+		<script src="./libs/gsap/gsap.min.js"></script>
+		<script src="./libs/gsap/ScrollTrigger.min.js"></script>
+		<script src="./libs/gsap/ScrollSmoother.min.js"></script>
+		<!--js-->
+		<script type="module" src="./js/main.js" defer></script>
+		<script type="module" src="./js/galleryModal.js" defer></script>
+		<script type="module" src="./js/modal.js" defer></script>
+		<script type="module" src="./js/reviewsSlider.js" defer></script>
+		<script type="module" src="./js/feedBackForm.js" defer></script>
+
+		
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="header">
+				<div class="container">
+					<div class="header-content">
+						<div class="header__logo-box">
+							<a href="#">
+								<img
+									class="header__logo"
+									src="./assets/svg/Logo.svg"
+									alt="logo"
+								/>
+							</a>
+						</div>
+
+						<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a href="#advantages">Преимущества</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#">Продукты</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#">Галерея</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#">Партнеры</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#">Отзывы</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div>
+							<button class="header__login-button">Войти</button>
+						</div>
+
+						<div class="header__burger" id="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- burger -->
+				<div class="header__mobile-nav" id="mobile-nav">
+					<div class="container">
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a href="#">Преимущества</a></li>
+							<li class="header__nav-item"><a href="#">Продукты</a></li>
+							<li class="header__nav-item"><a href="#">Галерея</a></li>
+							<li class="header__nav-item"><a href="#">Партнеры</a></li>
+							<li class="header__nav-item"><a href="#">Отзывы</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="work-faster">
+					<div class="container">
+						<div class="work-faster__content">
+							<h1 class="work-faster__title">
+								Работайте быстрее <br />
+								скорости мысли
+							</h1>
+							<p class="work-faster__description">
+								Большинство календарей предназначены для команд. Link предназначен
+								для фрилансеров, которым нужен простой способ планирования своего
+								расписания
+							</p>
+
+							<button class="work-faster__button--primary">
+								Попробовать бесплатно
+							</button>
+							<button class="work-faster__button--secondary">
+								Узнать больше
+							</button>
+						</div>
+
+						<div class="dashboard"></div>
+					</div>
+				</section>
+
+				<section id="advantages" class="advantages">
+					<div class="container">
+						<h2 class="advantages__title">Преимущества</h2>
+						<p class="advantages__subtitle">
+							Link предназначен для фрилансеров, которым нужен простой способ
+							планирования своего расписания
+						</p>
+
+						<div class="advantages__inner">
+
+							<div class="advantages__inner-box">
+								<div class="advantages__image-chat"></div>
+							</div>
+
+							<div class="advantages__description">
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="products">
+
+					<div class="container">
+						<h2 class="products__title">Продукт</h2>
+						<p class="products__subtitle">
+							Мы уделяем особое внимание эргономике и стараемся соответствовать
+							месту работы
+						</p>
+
+						<div class="products__features">
+							<div class="product-feature product-feature--work">
+								<h3 class="product-feature__title">Работа</h3>
+								<p class="product-feature__description">
+									Вы когда-нибудь задумывались о том, не слишком ли вы зависите от
+									клиента в работе? Link поможет вам определиться
+								</p>
+								<button class="product-feature__button">Регистрация</button>
+							</div>
+
+							<div class="product-feature product-feature--design">
+								<h3 class="product-feature__title">Дизайн с реальными данными</h3>
+								<p class="product-feature__description">
+									Вы когда-нибудь задумывались о том, не слишком ли вы зависите от
+									клиента в работе? Link поможет вам определиться
+								</p>
+								<button class="product-feature__button">
+									Попробовать бесплатно
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<div class="container">
+						<h2 class="gallery__title">Галерея</h2>
+						<p class="gallery__description">
+							Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы
+						</p>
+
+						<!-- Основная галерея -->
+						<div class="gallery__inner">
+							<div class="div1">
+								<img src="./assets/images/Frame1.png" alt="gallery image 1" />
+							</div>
+							<div class="div2">
+								<img src="./assets/images/Frame2.png" alt="gallery image 2" />
+							</div>
+							<div class="div3">
+								<img src="./assets/images/Frame3.png" alt="gallery image 3" />
+							</div>
+							<div class="div4">
+								<img src="./assets/images/Frame4.png" alt="gallery image 4" />
+							</div>
+							<div class="div5">
+								<img src="./assets/images/Frame5.png" alt="gallery image 5" />
+							</div>
+							<div class="div6">
+								<img src="./assets/images/Frame6.png" alt="gallery image 6" />
+							</div>
+							<div class="div7">
+								<img src="./assets/images/Frame7.png" alt="gallery image 7" />
+							</div>
+						</div>
+
+						<!-- Дополнительная галерея (по умолчанию скрыта) -->
+						<div class="gallery__more gallery__inner">
+							<div class="div1">
+								<img src="./assets/images/Frame1.png" alt="gallery image 1" />
+							</div>
+							<div class="div2">
+								<img src="./assets/images/Frame2.png" alt="gallery image 2" />
+							</div>
+							<div class="div3">
+								<img src="./assets/images/Frame3.png" alt="gallery image 3" />
+							</div>
+							<div class="div4">
+								<img src="./assets/images/Frame4.png" alt="gallery image 4" />
+							</div>
+							<div class="div5">
+								<img src="./assets/images/Frame5.png" alt="gallery image 5" />
+							</div>
+							<div class="div6">
+								<img src="./assets/images/Frame6.png" alt="gallery image 6" />
+							</div>
+							<div class="div7">
+								<img src="./assets/images/Frame7.png" alt="gallery image 7" />
+							</div>
+						</div>
+
+						<button class="gallery__button-more">Показать еще</button>
+					</div>
+
+					<!-- Модальное окно галереи -->
+					<div id="gallery-modal" class="gallery__modal">
+						<div class="gallery__modal-content">
+							<span id="gallery-modal-close" class="gallery__modal-close">&times;</span>
+							<img id="gallery-modal-img" class="gallery__modal-image" src="" alt="modal image">
+						</div>
+					</div>
+				</section>
+
+				<section class="partners">
+					<div class="container">
+						<h2 class="partners__title">Партнёры</h2>
+						<p class="partners__description">
+							Мы уделяем особое внимание эргономике и стараемся соответствовать
+							месту работы
+						</p>
+
+						<div class="partners__inner">
+							<ul class="partners__list">
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/1.png"
+											alt="Логотип Партнера 1"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/2.png"
+											alt="Логотип Партнера 2"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/3.png"
+											alt="Логотип Партнера 3"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/4.png"
+											alt="Логотип Партнера 4"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/5.png"
+											alt="Логотип Партнера 5"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/6.png"
+											alt="Логотип Партнера 6"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="./assets/partners/7.png"
+											alt="Логотип Партнера 7"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="reviews">
+					
+					<div class="container">
+						<h2 class="reviews__title">Отзывы</h2>
+
+
+						<div class="swiper"> 
+
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="./assets/images/avatar1.png" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="./assets/images/avatar1.png" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="./assets/images/avatar1.png" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="./assets/images/avatar1.png" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="./assets/images/avatar1.png" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="./assets/images/avatar1.png" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+
+							</div>
+
+								<div class="btn-prev">
+									<img src="./assets/images/arrow-right.png" alt="Prev">
+								</div>
+								
+								
+								<div class="btn-next">
+									<img src="./assets/images/arrow-right.png" alt="Next">
+								</div>
+								
+								<div class="pagination-box">
+									<div class="swiper-pagination"></div>
+								</div>
+
+						</div>
+					</div>
+
+					<div id="modal" class="modal">
+						<div class="modal__overlay"></div>
+						<div class="modal__content">
+							<button class="modal__close"></button>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="feedback">
+					<div class="container">
+						<div class="feedback__content">
+							
+							<div class="feedback__right">
+
+								<div class="feedback__left">
+									<h2 class="feedback__title">Оставьте заявку на бетатест</h2>
+									<p class="feedback__subtitle">
+										Мы уделяем особое внимание эргономике и стараемся
+										соответствовать месту работы
+									</p>
+								</div>
+
+								<form class="feedback__form" action="#" method="post">
+									<fieldset class="feedback__fieldset">
+										<label class="feedback__label" for="name">Ваше имя</label>
+										<input
+											class="feedback__input"
+											placeholder="Введите имя"
+											id="name"
+											type="text"
+											name="name"
+											required
+										/>
+
+										<label class="feedback__label" for="phone"
+											>Номер телефона</label
+										>
+										<input
+											class="feedback__input"
+											placeholder="+7 000 000-00-00"
+											id="phone"
+											type="tel"
+											name="phone"
+											required
+										/>
+
+										<label class="feedback__label" for="email">E-mail</label>
+										<input
+											class="feedback__input"
+											placeholder="example@email.com"
+											id="email"
+											type="email"
+											name="email"
+											required
+										/>
+
+										<label class="feedback__label" for="message"
+											>Комментарий</label
+										>
+										<textarea
+											class="feedback__textarea"
+											placeholder="Здравствуйте, хотелось бы..."
+											id="message"
+											name="message"
+											rows="4"
+											required
+										></textarea>
+
+										<p class="feedback__policy">
+											Нажимая «Отправить» вы соглашаетесь с <br />
+											<a href="#" class="feedback__policy-link"
+												>политикой конфиденциальности</a
+											>
+										</p>
+
+										<button class="feedback__button" type="submit">
+											Отправить
+										</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="grid">
+					<div class="footer__navigation footer__navigation--link">
+						<h3 class="footer__navigation-title">Навигация</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Преимущества</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Продукты</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Галерея</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Партнеры</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Отзывы</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Заявка</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--mission">
+						<h3 class="footer__navigation-title">Миссия</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Повествование</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Роадмеп</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Релизы</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Календарь</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Сторибук</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Художка</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--resources">
+						<h3 class="footer__navigation-title">Ресурсы</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Для инвесторов</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Вайтлист</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Прайслист</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Презентация</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Файлы</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--about">
+						<h3 class="footer__navigation-title">О нас</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">История компании</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Об основателе</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Наша команда</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Вакансии</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--contacts">
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<address class="footer__item--address">
+										г. Москва, ул. Пушкина, д. Колотушкина 37, <br />
+										каб. 142, дверь справа
+									</address>
+								</li>
+								<li class="footer__item">
+									<a href="tel:+79991234567" class="footer__link"
+										>+7 999 123-45-67</a
+									>
+								</li>
+								<li class="footer__item">
+									<a href="mailto:example@mail.com" class="footer__link"
+										>example@mail.com</a
+									>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="footer__socials">
+							<ul class="footer__socials-list">
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="./assets/socials/vk.png" alt="Facebook"
+									/></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="./assets/socials/tg.png" alt="Twitter"
+									/></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="./assets/socials/youtube.png" alt="Instagram"
+									/></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="./assets/socials/dzen.png" alt="LinkedIn"
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					</div>
+					<div class="footer__bottom">
+
+						<a href="#">
+							<img
+								class="footer__logo"
+								src="./assets/svg/Logo.svg"
+								alt="Логотип компании"
+							/>
+						</a>
+
+						<small class="footer__copyright">
+							ООО «Пример компании», 2020–2023
+						</small>
+
+						<nav class="footer__links">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+							<a href="#" class="footer__link">Публичная оферта</a>
+						</nav>
+
+							<a href="#" class="footer__button footer__button--up"
+							>Вернуться наверх
+							</a>
+					</div>
+				</div>
+
+			</footer>
+
+		</div>
+	</div>
+
+	</body>
+</html>

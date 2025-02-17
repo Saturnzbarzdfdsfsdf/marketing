@@ -1,0 +1,21 @@
+@use './font/font.scss';
+
+@use './base/mixins';
+
+// components
+@use './components/work-faster';
+@use './components/advantages';
+@use './components/products';
+@use './components/gallery';
+@use './components/partners';
+@use './components/reviews';
+@use './components/feedback';
+
+// layout
+@use './layout/layout';
+@use './layout/header';
+@use './layout/footer';
+
+@use './base/var' as v;
+
+@use './base/reset';

@@ -1,0 +1,104 @@
+@use '../base/var' as v;
+@use '../base/mixins';
+
+.feedback {
+	margin-bottom: 13rem;
+	&__content {
+		display: flex;
+	}
+
+	&__left {
+		position: relative;
+		overflow: hidden;
+		background-color: v.$ascent-color;
+		border-radius: v.$br16;
+
+		width: 708px;
+		height: 844px;
+
+		margin-right: auto;
+
+		&::before {
+			content: '';
+			position: absolute;
+
+			background: url('../../assets/images/Dashboard1.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 1135px 659px;
+			left: -15rem;
+			top: 24rem;
+
+			width: 1200px;
+			height: 700px;
+		}
+	}
+
+	&__right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border-radius: v.$br16;
+
+		background-color: rgb(34, 37, 43);
+		width: 100%;
+		height: 844px;
+
+		padding-right: 120px;
+	}
+
+	&__title {
+		@include mixins.title(v.$fs56);
+		margin-top: 7.5rem;
+		margin-left: 7.5rem;
+		max-width: 28.5rem;
+	}
+
+	&__subtitle {
+		@include mixins.subtitle;
+		margin-left: 7.5rem;
+		max-width: 28.5rem;
+	}
+}
+
+.feedback__fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.feedback__input {
+	@include mixins.input;
+	margin-bottom: 1.5rem;
+}
+.feedback__textarea {
+	@include mixins.input(8.2rem);
+	margin-bottom: 1.5rem;
+	padding-top: 1rem;
+	resize: none;
+}
+.feedback__button {
+	@include mixins.button-base(0.75rem 1.5rem, v.$ascent-color);
+
+	&:hover {
+		background-color: v.$ascent-howe-color;
+	}
+}
+
+.feedback__left--success {
+	background-color: rgba(85, 247, 85, 0.587);
+	transition: v.$transition-base;
+}
+
+.feedback__policy {
+	color: v.$card-gray-color;
+	margin-bottom: 1.5rem;
+	&-link {
+		color: v.$card-gray-color;
+		&:hover {
+			color: v.$ascent-howe-color;
+		}
+	}
+}
+

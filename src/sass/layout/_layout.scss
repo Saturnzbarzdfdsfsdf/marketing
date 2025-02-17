@@ -1,0 +1,21 @@
+@use '../base/var' as v;
+
+body {
+  font-family: v.$ff-Onest;
+  font-size: v.$fs16;
+  font-weight: 400;
+  line-height: v.$lh24;
+  scroll-behavior: smooth;
+	color: v.$text-base-color;
+	background-color: rgb(22, 24, 29);
+
+}
+
+.container {
+	max-width: v.$container-width;
+  padding: 0 1rem;
+
+	margin: 0 auto;
+  // background-color: rgb(117, 117, 117);
+}
+

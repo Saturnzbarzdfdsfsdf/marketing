@@ -1,0 +1,140 @@
+@use '../base/var' as v;
+@use '../base/mixins';
+
+.work-faster {
+	position: relative;
+	margin-bottom: v.$margin-section-base;
+
+	background: v.$bg-gradient;
+
+	&__title {
+		@include mixins.title;
+	}
+
+	&__description {
+		@include mixins.subtitle;
+
+		max-width: 38rem;
+		margin: 0 auto;
+		margin-bottom: 4rem;
+	}
+
+	&__button--primary {
+		@include mixins.button-base(1.24rem 2.6rem, v.$ascent-color, v.$fs18);
+
+		line-height: 135%;
+		// margin-right: 0px;
+		border: none;
+
+		&:hover {
+			background-color: v.$ascent-howe-color;
+		}
+	}
+
+	&__button--secondary {
+		@include mixins.button-base(1.25rem 2.5rem, transparent, v.$fs18);
+		border: v.$button-border;
+		margin-left: 11px;
+		margin-right: 23px;
+		line-height: 135%;
+		&:hover {
+			background-color: v.$button-hover-gray;
+		}
+	}
+}
+
+.work-faster__content {
+	max-width: 49rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.dashboard {
+	height: 69.7rem;
+	pointer-events: none;
+
+	&::before {
+		content: '';
+		position: absolute;
+
+		background: url('../../assets/images/Dashboard1.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		// background-size: 833px 484px;
+		left: 0;
+		top: 12rem;
+
+		width: 100%;
+		height: 100%;
+		// z-index: 100;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0),
+			rgb(14, 14, 14) 90.146%
+		);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: 100% 750px;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+		// z-index: 100;
+	}
+}
+
+@media (max-width: 375px) {
+	.work-faster {
+		position: relative;
+		margin-bottom: v.$margin-section-base;
+
+		background: v.$bg-gradient;
+
+		&__title {
+			@include mixins.title(v.$fs48);
+			margin-bottom: 1.5rem;
+		}
+
+		&__description {
+			@include mixins.subtitle;
+			max-width: 21.5rem;
+
+			margin-bottom: 3rem;
+		}
+
+		&__button--primary {
+			@include mixins.button-base(1rem 2rem, v.$ascent-color, v.$fs16);
+			margin-right: 0;
+			margin-bottom: 0.75rem;
+			border: none;
+		}
+
+		&__button--secondary {
+			@include mixins.button-base(1rem 4.4rem, transparent, v.$fs16);
+		}
+	}
+
+	.work-faster__content {
+		max-width: 49rem;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.dashboard {
+		height: 40rem;
+		pointer-events: none;
+
+		&::before {
+			background-size: 733px 484px;
+			left: 0;
+			top: 17rem;
+		}
+	}
+}

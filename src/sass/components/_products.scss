@@ -1,0 +1,154 @@
+@use '../base/var' as v;
+@use '../base/mixins';
+
+.products {
+	text-align: center;
+	margin-bottom: v.$margin-section-base16;
+
+	&__features {
+		display: flex;
+		gap: 1.5rem;
+	}
+	&__title {
+		@include mixins.title(v.$fs56);
+
+	}
+	&__subtitle {
+		@include mixins.subtitle;
+		margin: 0 auto;
+		max-width: 32.5rem;
+		margin-bottom: 4rem;
+	}
+}
+
+.product-feature {
+	box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+	background: rgb(34, 37, 43);
+	width: 696px;
+	height: 642px;
+	border-radius: v.$br16;
+	padding: 3rem;
+
+	&__title {
+		font-size: v.$fs20;
+		margin-bottom: 1.5rem;
+		text-wrap: nowrap;
+	}
+	&__description {
+		max-width: 23rem;
+		margin: 0 auto;
+		margin-bottom: 3.6rem;
+	}
+	&__button {
+		@include mixins.button-base(0.75rem 1.5rem, v.$ascent-color);
+		font-size: v.$fs16;
+
+		margin-bottom: 4.6rem;
+
+		&:hover {
+			background-color: v.$ascent-howe-color;
+		}
+	}
+}
+
+.product-feature--design {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 100;
+
+		background: url('../../assets/images/BoardsNotifications.png');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		bottom: 50px;
+		right: 160px;
+
+		width: 384px;
+		height: 280px;
+	}
+}
+.product-feature--work {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 100;
+
+		background: url('../../assets/images/BoardsNotifications2.png');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		bottom: 25px;
+		right: 157px;
+
+		width: 406px;
+		height: 327px;
+	}
+}
+
+@media (max-width: 375px) {
+	.products {
+		text-align: center;
+
+		&__features {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+		&__title {
+			@include mixins.title(v.$fs36);
+		}
+		&__subtitle {
+			@include mixins.subtitle;
+			margin: 0 auto;
+			max-width: 32.5rem;
+			margin-bottom: 4rem;
+		}
+	}
+	.product-feature {
+		width: 343px;
+		height: 540px;
+
+		padding: 2rem 1rem;
+
+		&__title {
+			line-height: 130%;
+			margin-bottom: 1rem;
+		}
+		&__description {
+			max-width: 23rem;
+
+			margin: 0 auto;
+			margin-bottom: 2rem;
+		}
+		&__button {
+			@include mixins.button-base(0.75rem 1.5rem, v.$ascent-color);
+			margin-bottom: 2.75rem;
+		}
+	}
+
+	.product-feature--work {
+		position: relative;
+		&::before {
+			background-size: 311px 210px;
+			width: 311px;
+			height: 210px;
+
+			bottom: 60px;
+			right: 15px;
+		}
+	}
+
+	.product-feature--design {
+		position: relative;
+		&::before {
+			background-size: 311px 225px;
+			width: 311px;
+			height: 226px;
+
+			bottom: 25px;
+			right: 15px;
+		}
+	}
+}
