@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!--css-->
+
+		<!--gsap-->
+		<script src="./libs/gsap/gsap.min.js"></script>
+		<script src="./libs/gsap/ScrollTrigger.min.js"></script>
+		<script src="./libs/gsap/ScrollSmoother.min.js"></script>
+		<!--js-->
+		<script type="module" crossorigin src="/marketing/assets/index-BdEdSHx7.js"></script>
+		<link rel="stylesheet" crossorigin href="/marketing/assets/index-BAdlrub3.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-content">
+					<div class="header__logo-box">
+						<a href="#work-faster">
+							<img
+								class="header__logo"
+								src="data:image/svg+xml,%3csvg%20width='134.005859'%20height='28.416138'%20viewBox='0%200%20134.006%2028.4161'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M86.12%205.83C85.69%205.83%2085.29%205.77%2084.94%205.64C84.57%205.51%2084.25%205.3%2083.97%205.03C83.43%204.49%2083.17%203.78%2083.17%202.91C83.17%202.76%2083.17%202.6%2083.19%202.46C83.21%202.31%2083.24%202.17%2083.28%202.03C83.41%201.57%2083.65%201.18%2084.01%200.84C84.57%200.28%2085.28%200%2086.12%200C86.94%200%2087.64%200.26%2088.23%200.8C88.82%201.34%2089.12%202.04%2089.12%202.91C89.12%203.78%2088.83%204.49%2088.27%205.03C87.71%205.56%2086.99%205.83%2086.12%205.83ZM62.39%2028.41L62.39%201.26L67.19%201.26L67.19%2024.03L81.33%2024.03L81.33%2028.41L62.39%2028.41ZM115.26%2028.41L115.26%201.26L119.95%201.26L119.95%2016.28L122.87%2016.28L128.2%208.17L133.46%208.17L126.9%2017.81L134%2028.41L128.55%2028.41L123.14%2020.39L119.95%2020.39L119.95%2028.41L115.26%2028.41ZM0%202.01L4.8%202.01L4.8%2028.41L0%2028.41L0%202.01ZM7.19%202.01L12%202.01L12%2028.41L7.19%2028.41L7.19%202.01ZM14.39%202.01L19.2%202.01L19.2%2028.41L14.39%2028.41L14.39%202.01ZM21.6%202.01L26.39%202.01L26.39%2028.41L21.6%2028.41L21.6%202.01ZM28.79%202.01L55.19%202.01L55.19%206.81L28.79%206.81L28.79%202.01ZM92.62%2028.41L92.62%208.17L97%208.17L97.27%2010.75C97.5%2010.43%2097.75%2010.15%2098.02%209.9C98.21%209.72%2098.41%209.55%2098.61%209.4C98.79%209.28%2098.96%209.16%2099.15%209.06C99.54%208.84%2099.94%208.65%20100.35%208.49C100.69%208.36%20101.05%208.26%20101.42%208.17C102.21%207.97%20102.95%207.87%20103.64%207.87C104.11%207.87%20104.56%207.89%20104.98%207.94L105.19%207.97C105.41%208%20105.61%208.04%20105.81%208.08C106.74%208.29%20107.53%208.64%20108.18%209.13C109.3%209.98%20110.1%2011.11%20110.55%2012.51C111.02%2013.92%20111.25%2015.5%20111.25%2017.24L111.25%2028.41L106.56%2028.41L106.56%2018C106.56%2017.26%20106.51%2016.55%20106.41%2015.85C106.37%2015.58%20106.31%2015.32%20106.25%2015.07C106.21%2014.94%20106.17%2014.81%20106.12%2014.68C106.1%2014.6%20106.07%2014.52%20106.03%2014.44C105.96%2014.26%20105.88%2014.1%20105.79%2013.93C105.51%2013.37%20105.1%2012.92%20104.56%2012.59C104.26%2012.4%20103.9%2012.27%20103.48%2012.19C103.16%2012.12%20102.8%2012.09%20102.41%2012.09C101.31%2012.09%20100.38%2012.39%2099.61%2012.97C98.84%2013.56%2098.27%2014.36%2097.88%2015.36C97.5%2016.33%2097.31%2017.44%2097.31%2018.7L97.31%2028.41L92.62%2028.41ZM83.78%2028.41L83.78%208.17L88.46%208.17L88.46%2028.41L83.78%2028.41ZM28.79%209.21L55.19%209.21L55.19%2014.01L28.79%2014.01L28.79%209.21ZM28.79%2016.41L55.19%2016.41L55.19%2021.21L28.79%2021.21L28.79%2016.41ZM28.79%2023.61L55.19%2023.61L55.19%2028.41L28.79%2028.41L28.79%2023.61Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+								alt="logo"
+							/>
+						</a>
+					</div>
+
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#advantages">Преимущества</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#products">Продукты</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#gallery">Галерея</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#partners">Партнеры</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#reviews">Отзывы</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div>
+						<button class="header__login-button">Войти</button>
+					</div>
+
+					<div class="header__burger" id="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<div id="login-modal" class="login__modal">
+						<div class="login__modal-content">
+							<button
+								id="login-modal-close"
+								class="login__modal-close"
+								aria-label="Закрыть модальное окно"
+							></button>
+
+							<form class="login__form" action="#" method="post">
+								<fieldset class="login__fieldset">
+									<legend class="login__legend">Вход в систему</legend>
+
+									<label class="login__label" for="email-login">E-mail</label>
+									<input
+										class="login__input"
+										id="email-login"
+										type="email"
+										placeholder="example@email.com"
+										required
+									/>
+									<label class="login__label" for="password">Пароль</label>
+									<div class="password-container">
+										<input
+											class="login__input"
+											id="password"
+											type="password"
+											placeholder="*********"
+											required
+										/>
+										<span class="toggle-password"
+											><i class="fas fa-eye"
+												><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAD1BMVEX///9HcEz///////////9iTY1sAAAABHRSTlO/AH5AMeItvgAAAIlJREFUeAGtkTECxTAIQil6/zN/I5Lv0q1O7SOiIXhe6huB3EKQABiFEktgTkF8hMI8h59AikuI4p5ZPCwUP981I5qnBTSHRhzf2Sra9fzO3EwJbojhavm3prkszncL9J5jYXv7u+Guu7lmOo+Vzb3g3Dc6SYeAyydErveQf6feSV6BPvX9m3f9AM0+AzwYvaCZAAAAAElFTkSuQmCC" alt="" /></i
+										></span>
+									</div>
+
+									<label class="login__remember-label">
+										<input
+											class="login__checkbox"
+											id="remember"
+											type="checkbox"
+										/>
+										<span class="login__custom-checkbox"></span>
+										Запомнить меня
+									</label>
+
+									<button type="submit" class="login__submit-button">
+										Войти
+									</button>
+								</fieldset>
+
+								<fieldset class="login__alternative-login">
+									<span class="login__alternative-text"
+										>Или войдите с помощью</span
+									>
+									<div class="login__social-buttons">
+										<a
+											href="#"
+											class="login__social-button login__social-button--apple"
+											>Apple</a
+										>
+										<a
+											href="#"
+											class="login__social-button login__social-button--google"
+											>Google</a
+										>
+									</div>
+								</fieldset>
+							</form>
+
+							<span class="login__registration-text"
+								>Впервые в системе?
+								<a href="#" class="login__registration-link"
+									>Регистрация</a
+								></span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- burger -->
+			<div class="header__mobile-nav" id="mobile-nav">
+				<div class="container">
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="#">Преимущества</a></li>
+						<li class="header__nav-item"><a href="#">Продукты</a></li>
+						<li class="header__nav-item"><a href="#">Галерея</a></li>
+						<li class="header__nav-item"><a href="#">Партнеры</a></li>
+						<li class="header__nav-item"><a href="#">Отзывы</a></li>
+					</ul>
+
+					<div class="header__socials">
+						<ul class="header__socials-list">
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfr9A+H3QJwAAAJhJREFUeAHtktEWwyAIQzXh/795VqrCWrV93Bl5yqlcCdQUCv2FchGHzWo57LfkkFp4i3sAdwDlJVAdJzOMsw7Ub5MR7GEDspnrKl4Ared0r+KTa/k0kMtUAdncbxPgUf1ZB98BK0BbgBZ4Qgh0S8SesFcfm8Ybov+b1WZ7Kvf4ZLmqM3mrytsWBaF5uGnfomEdL0qh0A/qA9hMBDHA+n9rAAAAAElFTkSuQmCC" alt="Вконтакте" />
+								</a>
+							</li>
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfkC/RlvC2AAAAIVJREFUeAHtlEsOwzAIBc2D+5+5H9U1loo07LrgrRJpBhtEsiaTP46ZtfB4Rrz4C8fCh4aCDh4BinvCw2lxkwPhFLel/UBubqdrkZsnvhLyWOx67/JFz0rN3n49JLn/4IPsXubJYijzaJMuAfBpAlAAU60PocL3EPx97kMawltp/TImE54H69wEadHy4LIAAAAASUVORK5CYII=" alt="Телеграм" />
+								</a>
+							</li>
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfr9A+H3QJwAAAH1JREFUeAHtlMsOhTAIRDsD///N9ya6EOXRLmpccFaacOJQoaNpPoLghOTxIJJVqwsDRzQErsBY0MUPqHqhkAnIhadcCUNYC7QtWmVCsKfAGeGaco+AIpI5pf+raboWsPfHzY3G8vCNpN7rOc0UrVywQsjWWm53ALLqpnmVH73JCDVcAnHmAAAAAElFTkSuQmCC" alt="YouTube" />
+								</a>
+							</li>
+							<li class="header__socials-item">
+								<a href="#" class="header__socials-link">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAQH6/KWsRPwAAALtJREFUeAHtVNESgyAMM03//5vHcEOKlpY7nzzz4CEmGmra7cWTAMEmkiZTVYFyYUYjWlEFBZEE3HlNECj+rE5QlhNBI2m/RuR/FDDBL85p7gJDX8pxCM9U9wE1BfBMjR4kEpw8mxrMHMl5C66ANM+kBsupEwq8fSzsuy/6WbJtAPqWMDu03FHW9R/HITwapW9I2xCtIH1MxbvnXNRgbsq2631D4DhHE3DOXx5kVdKNSiT4exvUefziQfgA8eQH0goXT44AAAAASUVORK5CYII=" alt="Дзен" />
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<button class="header__button-free">Попробовать бесплатно</button>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper">
+			<div class="content">
+				<main>
+					<section id="work-faster" class="work-faster">
+					<div class="container">
+						<div class="work-faster__content">
+							<h1 class="work-faster__title">
+								Работайте быстрее <br />
+								скорости мысли
+							</h1>
+							<p class="work-faster__description">
+								Большинство календарей предназначены для команд. Link предназначен
+								для фрилансеров, которым нужен простой способ планирования своего
+								расписания
+							</p>
+
+							<button  class="work-faster__button--primary">
+								<a href="#feedback">
+									Попробовать бесплатно
+								</a>
+							</button>
+							<button class="work-faster__button--secondary">
+								<a href="#advantages">
+									Узнать больше
+								</a>
+							</button>
+						</div>
+
+						<div class="dashboard"></div>
+					</div>
+				</section>
+
+				<section id="advantages" class="advantages">
+					<div class="container">
+						<h2 class="advantages__title">Преимущества</h2>
+						<p class="advantages__subtitle">
+							Link предназначен для фрилансеров, которым нужен простой способ
+							планирования своего расписания
+						</p>
+
+						<div class="advantages__inner">
+
+							<div class="advantages__inner-box">
+								<div class="advantages__image-chat"></div>
+							</div>
+
+							<div class="advantages__description">
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+
+								<div class="advantages__feature">
+									<h3 class="advantages__feature-title">
+										Единый источник истины
+									</h3>
+									<p class="advantages__feature-text">
+										Когда вы добавляете работу в свой календарь Link, мы
+										автоматически вычисляем полезные сведения
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="products" class="products">
+
+					<div class="container">
+						<h2 class="products__title">Продукт</h2>
+						<p class="products__subtitle">
+							Мы уделяем особое внимание эргономике и стараемся соответствовать
+							месту работы
+						</p>
+
+						<div class="products__features">
+							<div class="product-feature product-feature--work">
+								<h3 class="product-feature__title">Работа</h3>
+								<p class="product-feature__description">
+									Вы когда-нибудь задумывались о том, не слишком ли вы зависите от
+									клиента в работе? Link поможет вам определиться
+								</p>
+								<button class="product-feature__button">Регистрация</button>
+							</div>
+
+							<div class="product-feature product-feature--design">
+								<h3 class="product-feature__title">Дизайн с реальными данными</h3>
+								<p class="product-feature__description">
+									Вы когда-нибудь задумывались о том, не слишком ли вы зависите от
+									клиента в работе? Link поможет вам определиться
+								</p>
+								<button class="product-feature__button">
+									<a href="#feedback">
+
+										Попробовать бесплатно
+									</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="gallery" class="gallery">
+					<div class="container">
+						<h2 class="gallery__title">Галерея</h2>
+						<p class="gallery__description">
+							Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы
+						</p>
+
+						<div class="gallery__inner">
+							<div class="div1">
+								<img src="/marketing/assets/Frame1-DEKdsSWS.png" alt="gallery image 1" />
+							</div>
+							<div class="div2">
+								<img src="/marketing/assets/Frame2-B55ItlHv.png" alt="gallery image 2" />
+							</div>
+							<div class="div3">
+								<img src="/marketing/assets/Frame3-OXS2W0YF.png" alt="gallery image 3" />
+							</div>
+							<div class="div4">
+								<img src="/marketing/assets/Frame4-4OtG2X0S.png" alt="gallery image 4" />
+							</div>
+							<div class="div5">
+								<img src="/marketing/assets/Frame5-FFq0gDv_.png" alt="gallery image 5" />
+							</div>
+							<div class="div6">
+								<img src="/marketing/assets/Frame6-D8Z6UyxJ.png" alt="gallery image 6" />
+							</div>
+							<div class="div7">
+								<img src="/marketing/assets/Frame7-Coq4OMDs.png" alt="gallery image 7" />
+							</div>
+						</div>
+
+						<div class="gallery__more gallery__inner">
+							<div class="div1">
+								<img src="/marketing/assets/Frame1-DEKdsSWS.png" alt="gallery image 1" />
+							</div>
+							<div class="div2">
+								<img src="/marketing/assets/Frame2-B55ItlHv.png" alt="gallery image 2" />
+							</div>
+							<div class="div3">
+								<img src="/marketing/assets/Frame3-OXS2W0YF.png" alt="gallery image 3" />
+							</div>
+							<div class="div4">
+								<img src="/marketing/assets/Frame4-4OtG2X0S.png" alt="gallery image 4" />
+							</div>
+							<div class="div5">
+								<img src="/marketing/assets/Frame5-FFq0gDv_.png" alt="gallery image 5" />
+							</div>
+							<div class="div6">
+								<img src="/marketing/assets/Frame6-D8Z6UyxJ.png" alt="gallery image 6" />
+							</div>
+							<div class="div7">
+								<img src="/marketing/assets/Frame7-Coq4OMDs.png" alt="gallery image 7" />
+							</div>
+						</div>
+
+						<button class="gallery__button-more">Показать еще</button>
+					</div>
+
+					<div id="gallery-modal" class="gallery__modal">
+						<div class="gallery__modal-content">
+							<span id="gallery-modal-close" class="gallery__modal-close"></span>
+							<img id="gallery-modal-img" class="gallery__modal-image" src="" alt="modal image">
+						</div>
+					</div>
+				</section>
+
+				<section id="partners" class="partners">
+					<div class="container">
+						<h2 class="partners__title">Партнёры</h2>
+						<p class="partners__description">
+							Мы уделяем особое внимание эргономике и стараемся соответствовать
+							месту работы
+						</p>
+
+						<div class="partners__inner">
+							<ul class="partners__list">
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAABelBMVEVHcEwYeOcYeusaeusaeOkadOkaeOsWcOkafOkYdOkadOkafusYdOkYdukWvfkYx/sWyfsA//8Wx/kWv/sAgf8WyfsWx/sWg+0Yu/cYg+sWyfsYhe0WwfkYgesWw/kWufcWxfkWvfcWv/kWyfsYxfsYx/v///8WvfkagesafOsWwfkYrfUYqfUYh+0WxfsaeOkYs/cYt/cYo/MYi+0Ym/EYke8Wu/kYg+sWv/kafusYhe0Ww/sYr/UaeukYq/UYufcYsfUYp/MYj+8YpfMYtfcYofMYn/EYie0Yje8Yn/MYnfEWx/sadukYle8adOkWyfuNy/cYmfEYk+8Yl/HF7f3F6f2NyffF4/uNx/fF5/tSrfNSo/FSs/WNw/VSu/eL2/tSp/NSyfmLz/mNxfeL0fmL0/mNzflSsfPF5/1SwfdSpfFSv/dStfVSvfeL1/uL2fvF5fvF6/3F4fuL1flSufVSt/VSx/lSy/mL3ftSqfNSxflSw/lSsfWNzfeyr9KcAAAAJnRSTlMAQI+zjd+zLEZ6+7+1t0ZAegIsNgLftzbBwfvnj4Wz57OFv7WNjUPtdUAAAAJSSURBVHgBnZRZUxNBFIUP+77vewE6cUMjEKOIkbAIBWKFJGSVRZZKaSgJAfXB4r8zM3e2TvqGmv5eum/3+frMSwKb/t75ofG9Rxkfmu/th0jP8J4Phnu87pPXPnnqqH3TH30z3WfJCq5ukzv5QolJw+1+r0i3Ls8FFJkDBlTdQGAAs++UmcXoZ2VGMcPc/EtqJ8aaTCY5eQZv5fzQdE7shQGbcv4alnadNBcms4mgHJKJGyYT5OTgjStfs/Iaw2+3mIusYZXDsf+zEV5etYv5BF6y3JL8k08gwnJourd8IMLLRSqOFGvIrziouFjULtkIogyXpnsY1d/gIlFsMNBHHxvrBZfh5KzpZjeOtRo2FqXcUfEdbS7koUVsSaHiM33nbCTIZSrObtmyxshfZFDxH2N7RtXSGHYlkJClgaplsV0sV3NF+Sua7s3hXpJblsklM16yR421cVDFd0o7c4zeqg4eIOFQiBHW79iaCokEzSVndnDlmOcvT6BQcRNz5X2LAufqdkoYU7ayj7hFipdTcWFM20ocIRte1kIZ75RxFFfOpTk3I7zsuiGsi+RyuXUJVnXFKXYEjPb0jgT6rHPxUJTPZRHPjVYhL3mhxOmSBOtd4QzbHk7NQHlbCj0sHAlymYrl8lH1JRY8mPdHCwym/Mt7ghUvhrvCkS9X3mIi7CWfD9eg4nYCY2FlxjD1TJkpjKjLI0DHB0U6ALQ+V6RVl1Gv5tYbLtDwSYEGcjHY/MY3zYOWDDT6dRvhoa7rqw+66iDS0tbZ1P7tUdqbOttabOcB3kn6G0cWAakAAAAASUVORK5CYII="
+											alt="Логотип Партнера 1"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAADAFBMVEVHcEx0za1wy6tKw6d2z7V6z7VEwal2za1YxalqyatoyatWxalwzatUxalQw6duy6tSw6dcxatiyatyzatMwadaxatkx6lsyatMw6dwxbdKwadSw6lOw6dSxalsy6tmyatKw6tIw6uB0bdGwal4z7VIwas/v6d8z7U7v6d+0bVCwadAwadEw6uG07iF0bdstLdlsLKD0bdNpqBQqaRTs6lOmadDv5xxvr06walKwJxRqKNYp6pbs65gsa+E0bVjvbRRwqAAAAB50bZru71nu650yLlutLhswJo/uI51zJp6zJRis61ita5xyp5+zI9Qo6dpyaulzThju6R1ybefxidzwrxKv5s8tohmwqJToqlCvZdMmaNct7FuwbNEj6Fgt7GH07lcq6tev69mwbNKm6VKv5c6v6lSpaVwyYtQn6lIj6dGi6WD07mB0bdImaNKmaeDy72H07d2z7V60bVIj6VOr6VSn6lEwalasal8175St7F2u8FIp59ks7NWsa1al6lYt7NOh6VgubdEeqdSka1Kg6lSj6Veoa9QjatQt69Uk61Ot69Wt7NUt7Fam69OiateubVGfKlaubVEeKFcm6lCdqFMhatWla1Qi6tMt69tu71YubNcubVIgalIfqNWk6dKgaNQi6VeubdMt61cna9Yma9esbFQp6N4w7dGeqFYladcsa90u79Mg6Ngs7Fenalgn6les7FUj6dVqaZ0vbVOiaVps7VTsat4xbdgoatasa9Kp6Fis7NipatYsa9Mp6F2wbdyu79wu79Op6FYsa1kp6tss7ROp6Nwu71ms7Nyu7Vmqa1wubVos7NutbZora1QsapqsbNqubtssa1qr61vs7hnubpqu7tSp6Vus69Lr6hmq7Nss7dUr6tlqrBwta9UtbBMtKxMqqRorbN0vLFbm61lublctbNyua9OsalJgaZipbBYqadNhaVGfKNWlKpgtrRSjqlEeqVPtK5wt7twt7FOiahcs7FitbVYs69qtbdar61en69Wt7U7p7NykJ4L9R6hAAAAenRSTlMA8/Px5+fn8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz7/Pz8/Pz8+fn5+fn5+fn5+fn53Ln58JD50bF5sHL3XLOh8HdwjrczAKtv8GVg7lSkZnrwYmj5vEWzcIGuUZe2fGV1+vv182twZHN5ZWt16dywcGtrefxlXI6csHHwa3H1xYZmIMAAAL9SURBVHgB7dVXTFNtGAfw94OPD/iMChExGKIGZMSQUqGUWfZSUBBkuffe4gi7IkQcEQWEEGUEZQlogICIRg1IcCFDCKJFQEAZskFBL+wpLT3n9H0PPb0z8X/7zy95npvnAYScsF+7DiDjyjZAl8B++b+KiqvXw0tf9mL5ZTooflJBAcP/yK2CtRs01TCsow3j1of1hHiBnNwacutnrqkmxNoGBpJUD4fnE1d3ZavME+P/VpgR7CEtLSJeski8uq+tigoR6+qK+XHGSkms7ClcffecuZJYxK23MaBY+X9P/up+5kpwrG/G58cYDBReqr7PdqESCuvr7wDBphRYXRWN9+zUAMHBeT6yYJvsBwL8zMGJLrYpfirC1dWm3nTwptcv8Tg52VRqfGZrDRnX1/tIh63qqiC4ycFpdmz14TMcN3XbeFNjVl8rGncXuFFg9t4yCvyjIDPzrhcCy3uEx9+734fAU6GPMPzwrAsMe6TmYrjscSsMl4QKcWWllT8ZB0QXivDz1joSrp9680KMw8JYnnhsvjEdh1+9bRjH47GSEiLm8bxmsNIuLpeI3zWMz+Cxj1USuLT2lMs0PpKWL4nffyoW4LyaRiiu7WH5q6seHUiB46+d2RrAsLERhVtaWFvicpC4czMAzmjcnhE5gsaOgitmCMftoxkZkddSeuHYUXQ+mYaSuDQm5hKGb0VFQbC7He5wMzlEXNoWFCTCN65OkLCbO+lnONfh8OTlK3icdGEYjzmQb+UuwpMREWR8/uIM3g5/k0wOhr9HXIfhxEQBtrRDPmgmJ3Mo9iYc3+nqig+wBFQ5F4vGt39R0r/4j8XtI7LjlpCEERlxT0dISELcQK8MeLTjSTmGc1J6uTRxG6+iQoTT8ieS6GBeVhYec7nDUuPJomYyTo8elAp/4RU1Q3Dh4Ox46Gd/Pxyn5nbNhi360Tic+o7wwzRG4dNAihgZw7DJfiBdjIoksAmQPhYE/I0OFcwuxoGAdoyMp3GgHX2L8XI+PgBkjcVByvo3uxEtPQsW3fIAAAAASUVORK5CYII="
+											alt="Логотип Партнера 2"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABGCAMAAACnmwfnAAAAIVBMVEVHcEz///////////+lxzj////T453p8c271WrR453X56lQkEDwAAAABHRSTlMAv35AuvHKXwAAAZ9JREFUeAHtlcGS7CAIRQVzC5j//+CHtnHsaBLyFrMKmy4sjxfoAGkypjwflmNOt5YhWFzj9fF0axMsnrQNOQCbzhqEzQJwl2ZmKsa5CQdyTqlIEwEQERP/LZ4LR1iXVoOobs3UXzCLCZfCbpNJDF6yMTrDa7M0A91/IrpmPXfc1MzLem56HTlBL+DtsuTc8rXjG9oOrujG6lQ02f8BOS1a3hmdCm63aZNdJdyk+Ub4yhSn7RSB19IkAfisMyMpnyaNGHz4s7j0e04QC5hPGfZJ0Wap95FTQHkiZFxVipxH+6mT4xoJ2/bPr8Tf+0iisP3+ab3GGoX1t+54DA91f+EXfuEXrnDfE/Z4DFHix/AeKnLfjY9Hr5XVUWa4qvgsD8IEq0AZ+ilT3QMpCtd1MyzL+kgY9vv5/7akHbbks+W+hjkibZgiDtMyFGqifVfLz37zR2TwioNztlSRCD11wegBxBfosW6+QwcPt+QL/zHMX9cHOEdgjNe7pyF4n0ufHujfe+3jiHS9b58kuxcRblNNev/QlxeInGhoguotdf8BglEw17royXoAAAAASUVORK5CYII="
+											alt="Логотип Партнера 3"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAA8CAMAAADygAyiAAAB41BMVEVHcEy13/+33/+33/+33/+33/+13/+33f+33/+33f+33/+33f+33/+33/+33/+33/+rq/+33/+33/+33f+33/+33/+73f+33/+33/+32/+53f+13f+33/+33/+13f+32/+54f+13f+32/+34f+13/+B//+34f+53/+/v/+13/+33/+73/+55f+33/+13f+33f+13/+33//H4/+33f+32/+34f+z3f+53/+54/+13/+32/+53/+33/+13/+33f+r1f+33/+54f+33/+13f+56f+94/+35/+34f+13f+v3/+33f+33f+33/+33/+13f+13f+33/+34f+13f+13/+13f+33/+33/+13/+33/+33/+33/+z2/+33f+13/+33f+13f+33f+33/+13f+33f+33/+33/+13/+33f+33/+33/+13/+33f+Zzf9HcEy13f+14f+13f+50f+33/+13/+13f+13f+13/+33/+13/+33/+33/+13/+13f+33/+33f+33/+13/+33f+33/+13f+33/+33/+33/+33/+33/+33/+33f+13/+33f+33f+13/+33/+33/+33/+33f9mzWa33/8WrUiP1bN60Y2j2dk+vVZSwX5SxV4qtVB+z7Uwt1pwy5lIv2ofOF43AAAAk3RSTlMANl7VZpOdib2PlZfZq9P7Arv5fibLDnzxBiQsRnRgDjJqIlBqAko2BGBuMBx6THA8cAhCFHoeYBJmOChcXEgGLiB4JgoaFHJ4EKtotZGHcmxINOlYh6HP38WXKjSbxZ2nsdvbg42Dt+Wd2zoEAGgQbgpgbInr0Ymjo7e3rdfNs9eFzZ/b0ZndqcOlqYGfye2Lv7WyYcKRAAACxElEQVR4Aa3V6U8TQRgG8AFs0gpptCCHiCCeqHhEo8YDjbfWajz5oBXsB2OiQdAq8YyGKKAGlX336qV/qrPHbGd2Z3dmuz7fWKa/PO9sO4Mic2Xr/LsuwFlMF05dQK2mfRWYPJztbUGZ67sNgeQye+M6s6+An8exmNE0hObTAXlnXz9EJS/rvARBynLOZ5EDcE/GSYkdgEfrhE5RxgFYP/B/HCxFdyrIOni6KOeHvBO54/k4TsS3YEL40T915s8tfGdgUcDU1ZqpG/ST+1woI3TUqqIoGvXoLc95KnZq2GGldg6UFkCqUwhHbz7MnQ44YwKnQQqx0vUAJHAquBBxmOk2+pyzYsdUeNIC6wwLN7o5mE8aCfttaLW/DY5DdjogTdNOr/cZw1qkqhX/RvsK0dIDCupjHMVkpQqnEA7595umsz3HOFYlSrKdQCHqS3DCg7aRR7q7xqQk21GDTnO4ggdlfY5SVT3Jcao8iEi5Yde56RvMmU1VG3WoOE6N63jbdNCFOt2/qRXWbFT4hbxKv13oiW8wr5LI8Sods509gcF8lcxQh1S6Y0NDnEK0FOEQacqGVjmFKCnSIcNRB4geWGLKOG4l6zDZyS9kpVoTMaSSdeTu9r/6mLErdWLom312tA7ZlTZgqCNZIbfSMzQXukOxKt1CbUknc6AxtJn/7uPEusXL6G7yRhZ0DV1N+PbdkzKLvkPSSobz/g//TCg5v5E2hDZBIslx8taPdiaJ5Dhl54Qcd082vUUGvpJbpBtao1xnqnlD3oD4lEautQx9+e/44FFSlu7d/P1HEZtu6rI3tChM97rgpJ77HISOrAUmhqFpOg75OI6maQazZmkE8XIuBbEyfRyF5eL4R1mla74HRWZ0ZkmsvL40iGRyZk3xS5hRer+/TQoh2dVz6ORQubi8MpktlTomV5YXfl1+MTF4Pmz9P7zuNMw4ZCU5AAAAAElFTkSuQmCC"
+											alt="Логотип Партнера 4"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABACAMAAABxwuT6AAAAD1BMVEVHcEzhVlrfWFzhVFrhVlrs7RWDAAAABHRSTlMAfkC/RlvC2AAAAbJJREFUeAGdlWGiwyAIgxfo/c/8ttpNkQT1+bM0fogYXnqZ+3U58Dpfdv3Wsdy79lgdtO/kT7RoEjfAT9UYk8Vh5vfvFs9wBB5QdpJ4ShMxkyU4fvJtNKmP7aIJeB9NL2YTTcGbaIiO2EIL8BZagbfQEryB1uANdAFeoivwEl2CF+gavEDPYDOD2R46gu1xrzGXAh3AoNYr0QEctP2zRI/gR+v+zR01GsptMXqpQI/gaL3BPDl6ZoHfL0WnE7/E/TL0XJXQaDYICDrAUtjGaEaHU9bihI6n5ONGdnj83ZnYeR6pvOlUiLvFzdm9FkPE0guaf7bCYMbNUoGmvFEUMDtXvA3iTj1OnCugq2GPxTAv42CW6Z12VcNeD3NoP37QxTD/JKa83H9iZvSPm1xiiLSOdSG+ke5qiLQnLn0cybXzK9VD4HFdPl8W5LZ5FWxn/oe41RkqMyvP3MRq/BiZc8N6bpAXpWkBof52h7HwT8TVve9yI5h3CUjZhp61afNHGp4kicfa4D7EV+o2bwbYZ8WtQ2VphZHjpsM+3d2sdjLphPSOYxF/P0B38Ha89f5Z1n/4A9SmEBI53eNEAAAAAElFTkSuQmCC"
+											alt="Логотип Партнера 5"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAG1BMVEVHcEzrdADpdgDreAAoWIcmVockVofrdgAmVoejEFgwAAAAB3RSTlMAv35AQH6/+fY6zgAAAXVJREFUeAHtld2OxSAIhAuj1fd/4m36kwOKqHX3YpPDXaPzdUSE7Rv/IEAp8YKe0xl4Dbj0CyZolYAHkAjvk7hogn+RQMuEtyawTNjGUgmmZnw8tMtSHNUPXtS3CDQOsMtyBmCawBTAJHAr75dtGkqleSLCdWYwjxLEIywyNlbX8kdoL2JOH+rlvv3HZtzzEXscaXSoUx3zE3vQhF5Fl/ojovoJd+rxOrvU5xw8C7BqZdeArDbCfZBsGLgtmAAy670CRLmXGrcn8HEQYPUTGxBMgNSTAgQXkKziY30L2biFTd+0so/PHVFdR7cB/RyUfVUNqAm7/iUXt8fFTN9KQqwHrvH2qLCwhbsaY6g3WG+fitdwMkI0GkIS6RStCzon/rQ2t7qjUC6KT+40lWa/grWreFf8rKIYDqc7cKK6saQyrFnjTYaRQefPpv60J1ffJ/T0PUJf7xN4QO8gqDkVhxAT8hOhr58m5ReDzyI6SolfqL/x9/ED+2opEtPnfOYAAAAASUVORK5CYII="
+											alt="Логотип Партнера 6"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#" class="partners__link">
+										<img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAA8CAMAAACzWLNYAAAAD1BMVEVHcEwgcL8ecMEecMMecMGZaApqAAAABHRSTlMAQH6/KWsRPwAAAV5JREFUeAHtletuwzAIRrnk/Z952ap0vvHhSMatIs5fMD51gNKBYCLSw0OFKqw86rEqrtA6EZnQ4s6Kg7VOMV9LOy0J1yrEzIzZbzj4AUmyinUt/257O6yTV6+cxPewOQUveKMWY63yuWSjls5rTaYlSQzVXIwSuJ2F8aB7o6YoKB/TuhKOrVr+YmIQC9MSV0tvaSVJFPda3kDsklXTy9T5VVoCSn5OS1DJkrKURGsJLGk+ENZKkiiiW56HBc4z4QtCsRaNVsUGLbhOTwHtT9AOrd+7gRYPfwfWSpIo7rU8WwEBLd82/St35SSaWvqdWgfUqlcXfY0W9w65tx4LI9yE4RGzVFUOCoz+1usWhAnzJy4NbWdjWGa7FrdDt0WLPK0rSju1xNd6PZc6WskDWLi38CaqrvQEFrZ8O2tG9C9eaMVOolbXQi3+X1rBWlp+Fk+LtmipVr0yoVW8rKH1AyS8NIvczE0tAAAAAElFTkSuQmCC"
+											alt="Логотип Партнера 7"
+											class="partners__logo"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section id="reviews" class="reviews">
+					
+					<div class="container">
+						<h2 class="reviews__title">Отзывы</h2>
+
+
+						<div class="swiper"> 
+
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="data:image/png;base64,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" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="data:image/png;base64,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" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="data:image/png;base64,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" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="data:image/png;base64,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" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="data:image/png;base64,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" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<img src="data:image/png;base64,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" alt="avatar" />
+
+											<div class="card__top-content">
+												<h3 class="card__title">Федот Сергеев</h3>
+												<p class="card__direction-work">Дизайнер</p>
+											</div>
+										</div>
+										<p class="card__description">
+											Я использовал этот софт для фрилансера и был впечатлен его
+											функциональностью и простотой использования. Программа
+											помогла мне организовать свою работу и улучшить
+											эффективность выполнения задач. Особенно мне нравится, что
+											софт предоставляет возмож... 
+											<br>
+											<p class="card__description--extension"></p>
+										</p>
+										<button class="card__button-more">Показать ещё</button>
+									</div>
+								</div>
+
+							</div>
+
+								<div class="btn-prev">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAADFBMVEVHcEz///////////8Gn9AKAAAAA3RSTlMAv34uliqSAAAALklEQVR4Ac2PoQ0AIADDWPf/z1hMBQkBKlexdPwCiEjzwtCFmGDr5NSORWBx15miewCKo8M+5gAAAABJRU5ErkJggg==" alt="Prev">
+								</div>
+								
+								
+								<div class="btn-next">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAADFBMVEVHcEz///////////8Gn9AKAAAAA3RSTlMAv34uliqSAAAALklEQVR4Ac2PoQ0AIADDWPf/z1hMBQkBKlexdPwCiEjzwtCFmGDr5NSORWBx15miewCKo8M+5gAAAABJRU5ErkJggg==" alt="Next">
+								</div>
+								
+								<div class="pagination-box">
+									<div class="swiper-pagination"></div>
+								</div>
+
+						</div>
+					</div>
+
+					<div id="reviews__modal" class="reviews__modal">
+						<div class="reviews__modal-content">
+							<button class="reviews__modal-close"></button>
+						</div>
+					</div>
+
+				</section>
+
+					<section id="feedback" class="feedback">
+					<div class="container">
+						<div class="feedback__content">
+							
+						<div class="feedback__left">
+							<h2 class="feedback__title">Оставьте заявку на бетатест</h2>
+							<p class="feedback__subtitle">
+								Мы уделяем особое внимание эргономике и стараемся
+								соответствовать месту работы
+							</p>
+						</div>
+							
+							<div class="feedback__right">
+
+								<form class="feedback__form" action="#" method="post">
+									<fieldset class="feedback__fieldset">
+										<label class="feedback__label" for="name">Ваше имя</label>
+										<input
+											class="feedback__input"
+											placeholder="Введите имя"
+											id="name"
+											type="text"
+											name="name"
+											required
+										/>
+
+										<label class="feedback__label" for="phone"
+											>Номер телефона</label
+										>
+										<input
+											class="feedback__input"
+											placeholder="+7 000 000-00-00"
+											id="phone"
+											type="tel"
+											name="phone"
+											required
+										/>
+
+										<label class="feedback__label" for="email">E-mail</label>
+										<input
+											class="feedback__input"
+											placeholder="example@email.com"
+											id="email"
+											type="email"
+											name="email"
+											required
+										/>
+
+										<label class="feedback__label" for="message"
+											>Комментарий</label
+										>
+										<textarea
+											class="feedback__textarea"
+											placeholder="Здравствуйте, хотелось бы..."
+											id="message"
+											name="message"
+											rows="4"
+											required
+										></textarea>
+
+										<p class="feedback__policy">
+											Нажимая «Отправить» вы соглашаетесь с <br />
+											<a href="#" class="feedback__policy-link"
+												>политикой конфиденциальности</a
+											>
+										</p>
+
+										<button class="feedback__button" type="submit">
+											Отправить
+										</button>
+									</fieldset>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				</main>
+
+				<footer class="footer">
+				<div class="container">
+					<div class="grid">
+
+					<div class="footer__navigation footer__navigation--link">
+						<h3 class="footer__navigation-title">Навигация
+							 <span class="arrow"></span>
+						</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#advantages" class="footer__link">Преимущества</a>
+								</li>
+								<li class="footer__item">
+									<a href="#products" class="footer__link">Продукты</a>
+								</li>
+								<li class="footer__item">
+									<a href="#gallery" class="footer__link">Галерея</a>
+								</li>
+								<li class="footer__item">
+									<a href="#partners" class="footer__link">Партнеры</a>
+								</li>
+								<li class="footer__item">
+									<a href="#revievs" class="footer__link">Отзывы</a>
+								</li>
+								<li class="footer__item">
+									<a href="#feedback" class="footer__link">Заявка</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--mission">
+						<h3 class="footer__navigation-title">Миссия 
+							 <span class="arrow"></span>
+						</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Повествование</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Роадмеп</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Релизы</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Календарь</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Сторибук</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Художка</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--resources">
+						<h3 class="footer__navigation-title">Ресурсы 
+							 <span class="arrow"></span>
+						</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Для инвесторов</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Вайтлист</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Прайслист</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Презентация</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Файлы</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--about">
+						<h3 class="footer__navigation-title">О нас 
+							 <span class="arrow"></span>
+						</h3>
+
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">История компании</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Об основателе</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Наша команда</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Вакансии</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__navigation footer__navigation--contacts">
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<address class="footer__item--address">
+										г. Москва, ул. Пушкина, д. Колотушкина 37, <br />
+										каб. 142, дверь справа
+									</address>
+								</li>
+								<li class="footer__item">
+									<a href="tel:+79991234567" class="footer__link"
+										>+7 999 123-45-67</a
+									>
+								</li>
+								<li class="footer__item">
+									<a href="mailto:example@mail.com" class="footer__link"
+										>example@mail.com</a
+									>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="footer__socials">
+							<ul class="footer__socials-list">
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfr9A+H3QJwAAAJhJREFUeAHtktEWwyAIQzXh/795VqrCWrV93Bl5yqlcCdQUCv2FchGHzWo57LfkkFp4i3sAdwDlJVAdJzOMsw7Ub5MR7GEDspnrKl4Ared0r+KTa/k0kMtUAdncbxPgUf1ZB98BK0BbgBZ4Qgh0S8SesFcfm8Ybov+b1WZ7Kvf4ZLmqM3mrytsWBaF5uGnfomEdL0qh0A/qA9hMBDHA+n9rAAAAAElFTkSuQmCC" alt="Facebook"
+									/></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfkC/RlvC2AAAAIVJREFUeAHtlEsOwzAIBc2D+5+5H9U1loo07LrgrRJpBhtEsiaTP46ZtfB4Rrz4C8fCh4aCDh4BinvCw2lxkwPhFLel/UBubqdrkZsnvhLyWOx67/JFz0rN3n49JLn/4IPsXubJYijzaJMuAfBpAlAAU60PocL3EPx97kMawltp/TImE54H69wEadHy4LIAAAAASUVORK5CYII=" alt="Twitter"
+									/></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfr9A+H3QJwAAAH1JREFUeAHtlMsOhTAIRDsD///N9ya6EOXRLmpccFaacOJQoaNpPoLghOTxIJJVqwsDRzQErsBY0MUPqHqhkAnIhadcCUNYC7QtWmVCsKfAGeGaco+AIpI5pf+raboWsPfHzY3G8vCNpN7rOc0UrVywQsjWWm53ALLqpnmVH73JCDVcAnHmAAAAAElFTkSuQmCC" alt="Instagram"
+									/></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link"
+										><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAQH6/KWsRPwAAALtJREFUeAHtVNESgyAMM03//5vHcEOKlpY7nzzz4CEmGmra7cWTAMEmkiZTVYFyYUYjWlEFBZEE3HlNECj+rE5QlhNBI2m/RuR/FDDBL85p7gJDX8pxCM9U9wE1BfBMjR4kEpw8mxrMHMl5C66ANM+kBsupEwq8fSzsuy/6WbJtAPqWMDu03FHW9R/HITwapW9I2xCtIH1MxbvnXNRgbsq2631D4DhHE3DOXx5kVdKNSiT4exvUefziQfgA8eQH0goXT44AAAAASUVORK5CYII=" alt="LinkedIn"
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					</div>
+					<div class="footer__bottom">
+
+						<a href="#work-faster">
+							<img
+								class="footer__logo"
+								src="data:image/svg+xml,%3csvg%20width='134.005859'%20height='28.416138'%20viewBox='0%200%20134.006%2028.4161'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M86.12%205.83C85.69%205.83%2085.29%205.77%2084.94%205.64C84.57%205.51%2084.25%205.3%2083.97%205.03C83.43%204.49%2083.17%203.78%2083.17%202.91C83.17%202.76%2083.17%202.6%2083.19%202.46C83.21%202.31%2083.24%202.17%2083.28%202.03C83.41%201.57%2083.65%201.18%2084.01%200.84C84.57%200.28%2085.28%200%2086.12%200C86.94%200%2087.64%200.26%2088.23%200.8C88.82%201.34%2089.12%202.04%2089.12%202.91C89.12%203.78%2088.83%204.49%2088.27%205.03C87.71%205.56%2086.99%205.83%2086.12%205.83ZM62.39%2028.41L62.39%201.26L67.19%201.26L67.19%2024.03L81.33%2024.03L81.33%2028.41L62.39%2028.41ZM115.26%2028.41L115.26%201.26L119.95%201.26L119.95%2016.28L122.87%2016.28L128.2%208.17L133.46%208.17L126.9%2017.81L134%2028.41L128.55%2028.41L123.14%2020.39L119.95%2020.39L119.95%2028.41L115.26%2028.41ZM0%202.01L4.8%202.01L4.8%2028.41L0%2028.41L0%202.01ZM7.19%202.01L12%202.01L12%2028.41L7.19%2028.41L7.19%202.01ZM14.39%202.01L19.2%202.01L19.2%2028.41L14.39%2028.41L14.39%202.01ZM21.6%202.01L26.39%202.01L26.39%2028.41L21.6%2028.41L21.6%202.01ZM28.79%202.01L55.19%202.01L55.19%206.81L28.79%206.81L28.79%202.01ZM92.62%2028.41L92.62%208.17L97%208.17L97.27%2010.75C97.5%2010.43%2097.75%2010.15%2098.02%209.9C98.21%209.72%2098.41%209.55%2098.61%209.4C98.79%209.28%2098.96%209.16%2099.15%209.06C99.54%208.84%2099.94%208.65%20100.35%208.49C100.69%208.36%20101.05%208.26%20101.42%208.17C102.21%207.97%20102.95%207.87%20103.64%207.87C104.11%207.87%20104.56%207.89%20104.98%207.94L105.19%207.97C105.41%208%20105.61%208.04%20105.81%208.08C106.74%208.29%20107.53%208.64%20108.18%209.13C109.3%209.98%20110.1%2011.11%20110.55%2012.51C111.02%2013.92%20111.25%2015.5%20111.25%2017.24L111.25%2028.41L106.56%2028.41L106.56%2018C106.56%2017.26%20106.51%2016.55%20106.41%2015.85C106.37%2015.58%20106.31%2015.32%20106.25%2015.07C106.21%2014.94%20106.17%2014.81%20106.12%2014.68C106.1%2014.6%20106.07%2014.52%20106.03%2014.44C105.96%2014.26%20105.88%2014.1%20105.79%2013.93C105.51%2013.37%20105.1%2012.92%20104.56%2012.59C104.26%2012.4%20103.9%2012.27%20103.48%2012.19C103.16%2012.12%20102.8%2012.09%20102.41%2012.09C101.31%2012.09%20100.38%2012.39%2099.61%2012.97C98.84%2013.56%2098.27%2014.36%2097.88%2015.36C97.5%2016.33%2097.31%2017.44%2097.31%2018.7L97.31%2028.41L92.62%2028.41ZM83.78%2028.41L83.78%208.17L88.46%208.17L88.46%2028.41L83.78%2028.41ZM28.79%209.21L55.19%209.21L55.19%2014.01L28.79%2014.01L28.79%209.21ZM28.79%2016.41L55.19%2016.41L55.19%2021.21L28.79%2021.21L28.79%2016.41ZM28.79%2023.61L55.19%2023.61L55.19%2028.41L28.79%2028.41L28.79%2023.61Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+								alt="Логотип компании"
+							/>
+						</a>
+
+						<small class="footer__copyright">
+							ООО «Пример компании», 2020–2023
+						</small>
+
+						<nav class="footer__links">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+							<a href="#" class="footer__link">Публичная оферта</a>
+						</nav>
+
+							<a href="#work-faster" class="footer__button footer__button--up"
+							>Вернуться наверх
+							</a>
+					</div>
+				</div>
+
+			</footer>
+			
+		</div>
+		</div>
+	</body>
+</html>
