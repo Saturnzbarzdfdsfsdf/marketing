@@ -3,7 +3,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
 	root: 'src',
-	base: '/marketing',
+	// base: '/marketing',
 	build: {
 		emptyOutDir: true,
 		outDir: '../dist',
@@ -12,7 +12,7 @@ export default defineConfig({
 		viteStaticCopy({
 			targets: [
 				{
-					src: 'src/assets/images/*',
+					src: 'assets/images/**/*',
 					dest: 'assets/images',
 				},
 			],
