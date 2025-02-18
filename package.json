@@ -3,6 +3,7 @@
 	"homepage": "https://Saturnzbarzdfdsfsdf.github.io/marketing",
 	"version": "1.0.0",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"deploy": "npm run build && gh-pages -d dist",

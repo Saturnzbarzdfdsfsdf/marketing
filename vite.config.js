@@ -5,14 +5,15 @@ export default defineConfig({
 	root: 'src',
 	base: '/marketing',
 	build: {
+		emptyOutDir: true,
 		outDir: '../dist',
 	},
 	plugins: [
 		viteStaticCopy({
 			targets: [
 				{
-					src: 'src/assets/*',
-					dest: 'assets/images',
+					src: 'src/assets/**',
+					dest: 'assets',
 				},
 			],
 		}),

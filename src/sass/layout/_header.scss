@@ -86,7 +86,7 @@
 }
 
 /* Мобильные стили */
-@media (max-width: 768rem) {
+@media (max-width: 768px) {
 	.header__nav {
 		display: none;
 	}
@@ -110,16 +110,12 @@
 	}
 }
 
-// .header__mobile-nav.active {
-//     max-height: 500px;
-// }
 
 @media (max-width: 375px) {
 	.header {
 		margin-bottom: 0px;
 	}
 
-	 
 		.content {
 			padding-top: 0px !important;
 		}
