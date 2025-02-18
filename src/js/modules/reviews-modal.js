@@ -1,15 +1,14 @@
-// reviews-modal.js
 import { openModal, closeModal } from './modal.js'
 
 export function initReviewsModal() {
 	const modal = document.getElementById('reviews__modal')
 
-	// Костыль: перемещение слайдера в body, если необходимо
+	// Костыль: оверлея в боди
 	if (modal.parentNode !== document.body) {
 		document.body.appendChild(modal)
 	}
 
-	// Функция закрытия модального окна
+	// Закрытия модального окна
 	function handleClose() {
 		closeModal(modal)
 		modal.querySelector('.reviews__modal-content').innerHTML =

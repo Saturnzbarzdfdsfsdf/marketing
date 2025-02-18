@@ -1,4 +1,3 @@
-// gallery-modal.js
 import { openModal, closeModal } from './modal.js'
 
 export function initGalleryModal() {

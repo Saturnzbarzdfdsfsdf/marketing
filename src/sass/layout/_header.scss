@@ -86,7 +86,7 @@
 }
 
 /* Мобильные стили */
-@media (max-width: 48rem) {
+@media (max-width: 768rem) {
 	.header__nav {
 		display: none;
 	}
@@ -97,17 +97,33 @@
 
 	.header__mobile-nav.active {
 		display: block;
+		background-color: v.$main-bg-color;
+		height: 100vh;
+		transition: v.$transition-base;
 	}
 
 	.header__nav-list {
 		display: flex;
 		flex-direction: column;
-		// margin-top: 50px;
+		margin-top: 50px;
 		gap: 2.5rem;
 	}
 }
 
-@media (max-width: 23.5rem) {
+// .header__mobile-nav.active {
+//     max-height: 500px;
+// }
+
+@media (max-width: 375px) {
+	.header {
+		margin-bottom: 0px;
+	}
+
+	 
+		.content {
+			padding-top: 0px !important;
+		}
+	
 	.header__mobile-nav.active {
 		display: flex;
 	}
@@ -126,12 +142,11 @@
 			display: flex;
 			justify-content: center;
 			gap: 5px;
-			margin-top: 2rem;
+			margin-top: 3rem;
 			margin-bottom: 8rem;
 		}
 	}
 	.header__button-free {
 		@include mixins.button-base(1.2rem 4rem, v.$ascent-color);
-
 	}
 }

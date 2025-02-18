@@ -22,9 +22,7 @@
 
 	&__button--primary {
 		@include mixins.button-base(1.24rem 2.6rem, v.$ascent-color, v.$fs18);
-
 		line-height: 135%;
-		// margin-right: 0px;
 		border: none;
 
 		&:hover {
@@ -112,14 +110,17 @@
 
 		&__button--primary {
 			@include mixins.button-base(1rem 2rem, v.$ascent-color, v.$fs16);
+			display: inline-block;
 			margin-right: -10px;
-			margin-bottom: 0.75rem;
+			margin-bottom: 1rem;
 			border: none;
 		}
 
 		&__button--secondary {
-			@include mixins.button-base(1rem 4.2rem, transparent, v.$fs16);
-			margin-right: 0;
+			@include mixins.button-base(1rem 4.3rem, transparent, v.$fs16);
+			display: inline-block;
+			margin-right: 0px;
+
 		}
 	}
 
